@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오토딜러</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-area">
+        <div class="header-inner">
+            <a class="logo" href="index.html">오토딜러</a>
+
+            <form class="search-box" id="searchForm">
+                <input type="text" id="searchInput" placeholder="찾고 싶은 상품을 검색하세요">
+                <button type="submit">검색</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-copy">
+            <p class="label">오늘 들어온 특가 모아보기</p>
+            <h1>여러 쇼핑몰의 싼 가격만 골라서 보여주는 곳</h1>
+            <p class="description">
+                최저가, 배송비, 할인율을 한눈에 보고 진짜 살 만한 상품인지 빠르게 판단할 수 있습니다.
+            </p>
+        </section>
+
+        <section class="quick-row">
+            <div class="quick-item">
+                <strong>배송비 포함가</strong>
+                <span>상품 가격 + 배송비 기준</span>
+            </div>
+            <div class="quick-item">
+                <strong>할인율 비교</strong>
+                <span>정가 대비 얼마나 싼지 확인</span>
+            </div>
+            <div class="quick-item">
+                <strong>가격 하락</strong>
+                <span>이전 가격보다 내려간 상품 표시</span>
+            </div>
+        </section>
+
+        <section class="deal-section">
+            <div class="section-title">
+                <div>
+                    <p class="label">HOT DEAL</p>
+                    <h2>지금 진짜 싸게 뜬 상품</h2>
+                </div>
+                <p id="dealCount">0개 상품</p>
+            </div>
+
+            <div class="deal-layout">
+                <article class="main-deal" id="mainDeal">
+                    <!-- script.js에서 대표 상품이 들어갑니다. -->
+                </article>
+
+                <div class="deal-list" id="dealList">
+                    <!-- script.js에서 상품 카드가 들어갑니다. -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
