@@ -1,0 +1,21 @@
+{
+  "name": "autodealer-backend",
+  "version": "0.1.0",
+  "description": "AutoDealer deal comparison backend",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "crawl": "node crawler/run.js",
+    "schedule": "node crawler/schedule.js",
+    "seed": "node db/seed.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "node-cron": "^3.0.3",
+    "rss-parser": "^3.13.0"
+  }
+}
